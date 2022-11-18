@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [1, 2, 3, 4, 5, 6, 7];
+    let n = +prompt("Nhap phan tu cua mang : ");
+    let pos = arr.indexOf(n);
+    if (pos>=0) {
+        alert(n + 'is in the array');
+        arr.splice(pos,1); // bắt đầu vị trí pos phần tử trong mảng,1: vị trí phần tử bị xóa
+        console.log(arr);
+    } else {
+        alert(n + 'is  not in the array');
+    }
+</script>
+</body>
+</html>
